@@ -1,3 +1,5 @@
+"use client"
+
 import * as React from "react"
 
 const Label = React.forwardRef
@@ -7,11 +9,12 @@ const Label = React.forwardRef
   return (
     <label
       ref={ref}
-      className={`text-sm font-medium leading-none ${className || ''}`}
+      className={className}
       {...props}
     />
   )
 })
+
 Label.displayName = "Label"
 
 export { Label }
