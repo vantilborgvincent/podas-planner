@@ -1,20 +1,9 @@
-"use client"
+"use client";
 
-import * as React from "react"
+import React from "react";
 
-const Label = React.forwardRef
-  HTMLLabelElement,
-  React.LabelHTMLAttributes<HTMLLabelElement>
->(({ className, ...props }, ref) => {
-  return (
-    <label
-      ref={ref}
-      className={className}
-      {...props}
-    />
-  )
-})
+function Label(props) {
+  return <label {...props} />;
+}
 
-Label.displayName = "Label"
-
-export { Label }
+export { Label };
